@@ -1,21 +1,31 @@
 package com.pnbparihaut.controllers;
 
-import jakarta.annotation.security.RolesAllowed;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class LoginController {
-
-    @RequestMapping("/user")
-    @RolesAllowed("USER")
-    public String getUser() {
-        return "Welcome, User";
+    @GetMapping("/login")
+    public String loginEndpoint() {
+        return "Login!";
     }
 
-    @RequestMapping("/admin")
-    @RolesAllowed("ADMIN")
-    public String getAdmin(){
-        return "Welcome, Admin";
+    @GetMapping("/admin")
+    public String adminEndpoint() {
+        return "Admin!";
+    }
+
+    @GetMapping("/user")
+    public String userEndpoint() {
+        return "User!";
+    }
+
+    @GetMapping("/all")
+    public String allRolesEndpoint() {
+        return "All Roles!";
+    }
+
+    @DeleteMapping("/delete")
+    public String deleteEndpoint(@RequestBody String s) {
+        return "I am deleting " + s;
     }
 }
