@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b14ce8b9-af47-4e11-adc2-2e86762480eb" name="Changes" comment="subscribe et modifications du profil">
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/configurations/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/controllers/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/models/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/models/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/services/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/app/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/PNB_Parishaut/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/PnbParihautBackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/PnbParihautBackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/configurations/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/configurations/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/main/java/com/pnbparihaut/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/test/java/com/pnbparihaut/customer/services/ProfileModificationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/PNB-Parihaut-back/src/test/java/com/pnbparihaut/customer/services/ProfileModificationServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="75a8734d-18fe-4511-8619-86cf06096d47" />
+        <option name="url" value="https://github.com/LiamLeGoffic/PNB-Parihaut.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NQFMWtreLPrpk31GlY1wb1AeV5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/llegoffic/git/BorrowIt/back_final",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "76174a8230580d8b90db8811fcdaae80",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.pnbparihaut.services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProfileModificationServiceTest">
+    <configuration name="ProfileModificationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pnbparihaut.customer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pnbparihaut.customer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.pnbparihaut.customer.services.ProfileModificationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileModificationServiceTest.whenProfileModificationContainsAssignedId_thenSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pnbparihaut.customer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pnbparihaut.customer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.pnbparihaut.customer.services.ProfileModificationServiceTest" />
+      <option name="METHOD_NAME" value="whenProfileModificationContainsAssignedId_thenSaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileModificationServiceTest.whenProfileModificationContainsBadSyntax_thenSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pnbparihaut.customer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pnbparihaut.customer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.pnbparihaut.customer.services.ProfileModificationServiceTest" />
+      <option name="METHOD_NAME" value="whenProfileModificationContainsBadSyntax_thenSaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileModificationServiceTest.whenProfileModificationContainsUnassignedId_thenUnsaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pnbparihaut.customer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pnbparihaut.customer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.pnbparihaut.customer.services.ProfileModificationServiceTest" />
+      <option name="METHOD_NAME" value="whenProfileModificationContainsUnassignedId_thenUnsaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileModificationServiceTest.whenUpdateAllAttributesOfCustomer_thenUpdateAllAttributes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pnbparihaut.customer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pnbparihaut.customer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.pnbparihaut.customer.services.ProfileModificationServiceTest" />
+      <option name="METHOD_NAME" value="whenUpdateAllAttributesOfCustomer_thenUpdateAllAttributes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PnbParihautBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="PNB-Parihaut-back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pnbparihaut.PnbParihautBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProfileModificationServiceTest" />
+        <item itemvalue="JUnit.ProfileModificationServiceTest.whenProfileModificationContainsUnassignedId_thenUnsaved" />
+        <item itemvalue="JUnit.ProfileModificationServiceTest.whenProfileModificationContainsAssignedId_thenSaved" />
+        <item itemvalue="JUnit.ProfileModificationServiceTest.whenProfileModificationContainsBadSyntax_thenSaved" />
+        <item itemvalue="JUnit.ProfileModificationServiceTest.whenUpdateAllAttributesOfCustomer_thenUpdateAllAttributes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b14ce8b9-af47-4e11-adc2-2e86762480eb" name="Changes" comment="" />
+      <created>1679588351971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679588351971</updated>
+      <workItem from="1679588354427" duration="188000" />
+      <workItem from="1679679436127" duration="249000" />
+      <workItem from="1679902550584" duration="80618000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initialization backend (spring boot project)">
+      <created>1679679648493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679679648493</updated>
+    </task>
+    <task id="LOCAL-00002" summary="authentification et autorisations">
+      <created>1679928098345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679928098345</updated>
+    </task>
+    <task id="LOCAL-00003" summary="subscribe et modifications du profil">
+      <created>1680180605400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680180605400</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initialization backend (spring boot project)" />
+    <MESSAGE value="authentification et autorisations" />
+    <MESSAGE value="subscribe et modifications du profil" />
+    <option name="LAST_COMMIT_MESSAGE" value="subscribe et modifications du profil" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PNB_Parihaut$CustomerTest.ic" NAME="CustomerTest Coverage Results" MODIFIED="1680006237335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pnbparihaut.customer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/PNB_Parihaut$All_in_PNB_Parihaut_back.ic" NAME="All in PNB-Parihaut-back Coverage Results" MODIFIED="1679989476338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PNB_Parihaut$SubscribeServiceTest.ic" NAME="SubscribeServiceTest Coverage Results" MODIFIED="1680164560786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pnbparihaut.customer.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/PNB_Parihaut$PnbParihautBackApplication.ic" NAME="PnbParihautBackApplication Coverage Results" MODIFIED="1679989109173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PNB_Parihaut$CustomerTest_whenNewCustomerContainsBadName_thenUnauthorized.ic" NAME="CustomerTest.whenNewCustomerContainsBadName_thenUnauthorized Coverage Results" MODIFIED="1680013555054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pnbparihaut.customer.*</FILTER>
+    </SUITE>
+  </component>
+</project>
