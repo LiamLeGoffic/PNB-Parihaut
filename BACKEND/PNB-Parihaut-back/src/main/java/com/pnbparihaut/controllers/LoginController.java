@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class LoginController {
-    @GetMapping("/login")
+    /*@GetMapping("/login")
     public String loginEndpoint() {
         return "Login!";
-    }
+    }*/
 
     @GetMapping("/admin")
     public String adminEndpoint() {
@@ -19,9 +19,9 @@ public class LoginController {
         return "User!";
     }
 
-    @GetMapping("/all")
+    @GetMapping("/home")
     public String allRolesEndpoint() {
-        return "All Roles!";
+        return "Accueil!";
     }
 
     @DeleteMapping("/delete")

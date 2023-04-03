@@ -28,7 +28,6 @@ public class ProfileModificationServiceTest {
         Mockito.when( customerRepository.save(any()) ).thenReturn(new Customer());
         Mockito.when( customerRepository.findById(1L) ).thenReturn(Optional.of(new Customer(1L, "Le Goffic", "Liam", "moi@mail.fr", "118 218")));
         Mockito.when( customerRepository.findById(2L) ).thenReturn(Optional.empty());
-        //Mockito.when( any(Customer.class).checkAttributes() ).thenReturn(true);
         profileModificationService = new ProfileModificationService(customerRepository);
     }
 
@@ -44,6 +43,7 @@ public class ProfileModificationServiceTest {
     }
     @Test
     public void whenProfileModificationContainsBadSyntax_thenSaved() {
+        //Mockito.when( any(Customer.class).checkAttributes() ).thenReturn(true);
         Customer customer = new Customer(1L, "1561351", null, null, null);
         assertNull(profileModificationService.modifyProfile(customer));
     }

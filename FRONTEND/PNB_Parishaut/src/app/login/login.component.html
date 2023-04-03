@@ -1,0 +1,20 @@
+<div class="container justify-text text-center">
+    
+        <div class="md-form mb-5">
+            <p *ngIf="username == ''">Login</p>
+            <p *ngIf="username != ''">{{ username }}</p>
+        </div>
+        
+
+        <div>
+            <button class="btn" style="background-color: green;" *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+             (click)="username = username + i;" [ngClass]="(username.length != 10) ? 'btn' : 'btn disabled'">{{ i }}</button>
+             <button class="btn" style="background-color: rgb(179, 12, 12);" (click)="username = ''">Annuler</button>
+        </div>
+
+        <form>
+        <div class="d-flex flex-column text-center">
+            <button class="btn btn-default btn-round custom-close">Connexion</button>
+        </div>
+    </form>
+</div>
