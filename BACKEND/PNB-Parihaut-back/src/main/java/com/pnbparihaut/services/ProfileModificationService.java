@@ -19,19 +19,22 @@ public class ProfileModificationService {
         this.customerRepos = customerRepos;
     }
 
-
     public Customer modifyProfile(Customer modificationsToDo){
         if (modificationsToDo.getId() == null) {
+            System.out.println(1);
             return null;
         }
         Optional<Customer> optionalCustomerToModify = customerRepos.findById(modificationsToDo.getId());
         if (optionalCustomerToModify.isEmpty()) {
+            System.out.println(2);
             return null;
         }
         Customer modifiedCustomer = updateCustomer(modificationsToDo, optionalCustomerToModify.get());
-        if (modifiedCustomer.checkAttributes()) {
+        if (modifiedCustomer.checkAllAttributes()) {
+            System.out.println(3);
             return customerRepos.save(modifiedCustomer);
         } else {
+            System.out.println(4);
             return null;
         }
     }

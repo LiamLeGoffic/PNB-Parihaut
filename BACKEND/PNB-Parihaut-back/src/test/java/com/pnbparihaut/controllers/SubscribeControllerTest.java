@@ -1,4 +1,4 @@
-package com.pnbparihaut.customer.controllers;
+package com.pnbparihaut.controllers;
 
 import com.pnbparihaut.PnbParihautBackApplication;
 import org.junit.jupiter.api.BeforeEach;

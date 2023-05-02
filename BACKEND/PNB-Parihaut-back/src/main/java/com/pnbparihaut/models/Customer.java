@@ -3,6 +3,7 @@ package com.pnbparihaut.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,30 +20,46 @@ public class Customer {
     private String firstName;
     private String email;
     private String phoneNumber;
+    @OneToOne
+    private User userLinked;
 
-    public boolean checkAttributes() {
-        if (this.lastName == null || this.firstName == null || this.email == null || this.phoneNumber == null) {
-            System.out.println("Fields must not be null (except id)");
+    public boolean checkAllAttributes() {
+        return this.checkLastName() && this.checkFirstName() && this.checkEmail() && this.checkPhoneNumber();
+    }
+
+    public boolean checkLastName() {
+        if (this.lastName != null) {
+            // Last name must contain only letters or '-' or space
+            return this.lastName.matches("^[a-zA-Z -]*$");
+        } else {
             return false;
         }
-        boolean error = true;
-        if (!this.lastName.matches("^[a-zA-Z -]*$")) {
-            System.out.println("Last name must contain only letters or '-' or space");
-            error = false;
-        }
-        if (!this.firstName.matches("^[a-zA-Z -]*$")) {
-            System.out.println("First name must contain only letters or '-' or spaces");
-            error = false;
-        }
-        if (this.email.indexOf("@") == -1 || this.email.indexOf(".") == -1 || this.email.indexOf(" ") != -1) {
-            System.out.println("Email must contain '@' and '.' and must not contain space");
-            error = false;
-        }
-        if (!this.phoneNumber.matches("^[0-9 -]*$")) {
-            System.out.println("Phone number must contain only numbers or '-' or spaces");
-            error = false;
-        }
+    }
 
-        return error;
+    public boolean checkFirstName() {
+        if (this.firstName != null) {
+            // First name must contain only letters or '-' or spaces
+            return this.firstName.matches("^[a-zA-Z -]*$");
+        } else {
+            return false;
+        }
+    }
+
+    public boolean checkEmail() {
+        if (this.email != null) {
+            // Email must contain '@' and '.' and must not contain space
+            return this.email.contains("@") && this.email.contains(".") && !this.email.contains(" ");
+        } else {
+            return false;
+        }
+    }
+
+    public boolean checkPhoneNumber() {
+        if (this.phoneNumber != null) {
+            // Phone number must contain only numbers or '-' or spaces
+            return this.phoneNumber.matches("^[0-9 -]*$");
+        } else {
+            return false;
+        }
     }
 }

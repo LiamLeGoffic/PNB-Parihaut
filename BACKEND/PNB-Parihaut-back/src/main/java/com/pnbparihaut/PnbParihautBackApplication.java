@@ -1,20 +1,19 @@
 package com.pnbparihaut;
 
-import com.pnbparihaut.models.Customer;
-import com.pnbparihaut.models.User;
-import com.pnbparihaut.repositories.CustomerRepository;
+import com.pnbparihaut.auth.AuthenticationService;
+import com.pnbparihaut.auth.RegisterRequest;
 import com.pnbparihaut.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.http.ResponseEntity;
 
 @SpringBootApplication
 public class PnbParihautBackApplication implements CommandLineRunner {
 
     @Autowired
-    CustomerRepository customerRepos;
+    AuthenticationService authenticationService;
     @Autowired
     UserRepository userRepos;
 
@@ -25,7 +24,7 @@ public class PnbParihautBackApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("letzzzz gooooo");
-        userRepos.save(new User("user1", new BCryptPasswordEncoder().encode("password123"), "USER", true));
-        customerRepos.save(new Customer(null, "Le Goffic", "Liam", "moi@mail.fr", "118 218"));
+        RegisterRequest r1 = new RegisterRequest("Le Goffic", "Liam", "moi@mail.fr", "118 218", "5555555555", "012345");
+        ResponseEntity.ok(authenticationService.register(r1));
     }
 }

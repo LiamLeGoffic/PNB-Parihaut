@@ -1,20 +1,24 @@
 <div class="container justify-text text-center">
-    
-        <div class="md-form mb-5">
-            <p *ngIf="username == ''">Login</p>
-            <p *ngIf="username != ''">{{ username }}</p>
-        </div>
-        
-
-        <div>
-            <button class="btn" style="background-color: green;" *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
-             (click)="username = username + i;" [ngClass]="(username.length != 10) ? 'btn' : 'btn disabled'">{{ i }}</button>
-             <button class="btn" style="background-color: rgb(179, 12, 12);" (click)="username = ''">Annuler</button>
-        </div>
-
-        <form>
-        <div class="d-flex flex-column text-center">
-            <button class="btn btn-default btn-round custom-close">Connexion</button>
-        </div>
-    </form>
+    <div class="md-form">
+        <p *ngIf="username == ''">Login</p>
+        <p *ngIf="username != ''">{{ username }}</p>
+    </div>
+    <div>
+        <button class="btn" style="background-color: rgb(88, 223, 88);" *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            (click)="username = username + i;" [ngClass]="(username.length != 10) ? 'btn' : 'btn disabled'">{{ i }}</button>
+        <button class="btn" style="background-color: rgb(220, 56, 56);" (click)="username = ''">Annuler</button>
+    </div>
+    <div class="md-form">
+        <p *ngIf="password == ''">password</p>
+        <p *ngIf="password != ''">{{ password }}</p>
+    </div>
+    <div>
+        <button class="btn" style="background-color: rgb(88, 223, 88);" *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            (click)="password = password + i;" [ngClass]="(password.length != 6) ? 'btn' : 'btn disabled'">{{ i }}</button>
+        <button class="btn" style="background-color: rgb(220, 56, 56);" (click)="password = ''">Annuler</button>
+    </div>
+    <div class="d-flex flex-column text-center">
+        <button class="btn" style="background-color: rgb(201, 50, 158);" (click)="authenticate()"
+         [ngClass]="(password.length == 6 && username.length == 10) ? 'btn' : 'btn disabled'">Connexion</button>
+    </div>
 </div>

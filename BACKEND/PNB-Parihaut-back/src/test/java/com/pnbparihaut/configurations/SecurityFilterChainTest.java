@@ -1,4 +1,4 @@
-package com.pnbparihaut.securityfilterchain;
+package com.pnbparihaut.configurations;
 
 import com.pnbparihaut.PnbParihautBackApplication;
 import org.junit.jupiter.api.BeforeEach;
